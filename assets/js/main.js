@@ -1,6 +1,7 @@
 /**
  * Validar os RegEx; --> bug da senha de 8 digitos
  * Trabalhar Responsividade;
+ * Verificar se arquivo avaliacao 3.3 foi devidamente replicado aqui.
  */
 
 
