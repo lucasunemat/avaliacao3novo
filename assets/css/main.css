@@ -58,6 +58,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    max-height: 200vh;
 }
 
 .titulo-info {
@@ -127,21 +128,6 @@ ul {
 }
 
 #botaoCadastrar:hover {
-    background-color: #d68b00;
-}
-
-#botaoRelatorio {
-    background-color: #4B0082;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 0.5rem;
-    width: 30rem;
-}
-
-#botaoRelatorio:hover {
     background-color: #d68b00;
 }
 
@@ -224,4 +210,63 @@ td {
 #logo-nerv {
     width: 6rem;
     height: auto;
+}
+
+/* media query para 1024px */
+
+@media (max-width: 1280px) {
+    .cabecalho-navegacao-ul li a {
+        font-size: 1.2rem;
+    }
+
+    .section-info {
+        height: 60vh;
+        gap: 2rem;
+        padding: 1rem;
+        width: 80vw;
+    }
+
+    .section-info div {
+        width: 80vw;
+    }
+
+    .section-info img {
+        border-radius: 0.3rem;
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .container-cadastros {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .form input {
+        width: 80vw;
+    }
+
+    #botaoCadastrar {
+        width: 80vw;
+    }
+
+    table {
+        width: 80vw;
+    }
+
+    .section-ajuda {
+        height: 60vh;
+        gap: 2rem;
+        padding: 2rem;
+        width: 80vw;
+    }
+
+    .section-ajuda div {
+        width: 70vw;
+    }
+
+    .section-ajuda img {
+        border-radius: 0.3rem;
+        width: 30vw;
+    }
 }

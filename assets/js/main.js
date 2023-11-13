@@ -175,10 +175,12 @@ form.addEventListener('submit', (event) => {
     if (idEVA.value !== '') {
         Update(idEVA);
         Read();
+        //resizeBody();
         limparCampos();
     } else {
         Create();
         Read();
+        //resizeBody();
         limparCampos();
     }
     Read();
@@ -235,6 +237,18 @@ function validaSenha(){
         alert("A senha deve conter no mínimo 1 caractere especial!");
         return false;
     }
+}
+
+/* funcao para crescer dinamicamente height do body a medida que novos cadastros são feitos */
+
+function resizeBody() {
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+    document.body.style.height = height + 'rem';
 }
 
 
