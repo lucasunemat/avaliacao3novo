@@ -181,6 +181,7 @@ form.addEventListener('submit', (event) => {
         Read();
         limparCampos();
     }
+    Read();
 });
 
 function limparCampos() {
@@ -194,7 +195,7 @@ function limparCampos() {
 
 function validaCampos() {
     dataPattern = new RegExp('^[0-9]{2}/[0-9]{2}/[0-9]{4}$');
-    emailPattern = new RegExp('^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$');
+    emailPattern = new RegExp(/^[\w\.]+@\w+(\.\w+)+$/);
     if (dataPattern.test(dataManutencao.value) == false) {
         alert("Data de manutenção inválida!");
         return false;
@@ -214,13 +215,12 @@ function validaCampos() {
 }
 
 function validaSenha(){
-    /*minimo 8 caracteres */
-    minimalDigitPattern = new RegExp('^(?=.*[0-9]).{8,}$');
-    minimalUpperCasePattern = new RegExp('^(?=.*[A-Z]).{8,}$');
-    minimalLowerCasePattern = new RegExp('^(?=.*[a-z]).{8,}$');
-    minimalSpecialCharacterPattern = new RegExp('^(?=.*[!@#$%^&*()_+]).{8,}$');
-    if (minimalDigitPattern.test(senhaSincronizacaoMental.value) == false) {
-        alert("A senha deve conter no mínimo 8 dígitos!");
+    numberPattern = new RegExp(/[0-9]/);
+    minimalUpperCasePattern = new RegExp(/[A-Z]/);
+    minimalLowerCasePattern = new RegExp(/[a-z]/);
+    minimalSpecialCharacterPattern = new RegExp(/[!@#$%\^&*~)\[\]{}?\.(+=\._-]/);
+    if (senhaSincronizacaoMental.value.length < 8) {
+        alert("A senha deve conter no mínimo 8 caracteres!");
         return false;
     }
     if (minimalUpperCasePattern.test(senhaSincronizacaoMental.value) == false) {
