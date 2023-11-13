@@ -87,6 +87,7 @@ ul {
 }
 
 .section-info img {
+    border-radius: 0.3rem;
     width: 20vw;
     height: 30vh;
 }
@@ -132,20 +133,20 @@ ul {
 
 /* tabela de cadastros */
 
-table {
+#tabela {
     border-collapse: collapse;
-    font-size: 1rem;
     margin: 1rem;
     text-align: center;
-    width: 50vw;
+    width: 40vw;
 }
 
-table th,
+#tabela th,
 tr,
 td {
-    padding: 1rem;
     border: 1px solid #373737;
     background-color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
 }
 
 /* pagina ajuda */
@@ -176,6 +177,7 @@ td {
 }
 
 .section-ajuda img {
+    border-radius: 0.3rem;
     width: 20vw;
 }
 
@@ -213,18 +215,109 @@ td {
     height: auto;
 }
 
-/* media query para 1024px */
+/* media query para até 768px */
+
+@media (max-width: 768px) {
+
+    .cabecalho-navegacao-ul li a {
+        font-size: 1.7rem;
+    }
+
+    .container-cadastros {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .form h2{
+        font-size: 1.7rem;
+    }
+
+    .form input {
+        font-size: 1.4rem;
+        width: 80vw;
+    }
+
+    #botaoCadastrar {
+        font-size: 1.8rem;
+        width: 80vw;
+    }
+
+    #conteudoPagina h1 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .section-info {
+        border-radius: 0.6rem;
+        flex-direction: column;
+        height: auto;
+        padding: 1.4rem;
+        width: 90vw;
+    }
+
+    .section-info div {
+        width: 80vw;
+    }
+
+    .section-info p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-info img {
+        border-radius: 0.3rem;
+        height: 30vh;
+        width: 45vw;
+    }
+
+    /**/
+
+    .section-ajuda {
+        border-radius: 0.6rem;
+        flex-direction: column;
+        height: 70vh;
+        padding: 1rem;
+        width: 90vw;
+    }
+
+    .section-ajuda div {
+        width: 60vw;
+    }
+
+    .section-ajuda p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-ajuda img {
+        border-radius: 0.3rem;
+        height: auto;
+        width: 50vw;
+    }
+
+/* 
 
 @media (max-width: 1280px) {
     body {
-        max-width: 80vw;
+        width: auto;
     }
     #conteudoPagina {
         height: auto;
     }
 
+    .container-cadastros h2 {
+        font-size: 1.5rem;
+    }
+
     .cabecalho-navegacao-ul li a {
-        font-size: 1.2rem;
+        font-size: 1.9rem;
+    }
+
+    .titulo-info {
+        font-size: 1.8rem;
+        margin: 1rem 0 5rem 0;
+        text-align: center;
     }
 
     .section-info {
@@ -238,10 +331,18 @@ td {
         width: 80vw;
     }
 
+    .section-info h2 {
+        font-size: 1.9rem;
+    }
+
     .section-info img {
         border-radius: 0.3rem;
         height: 30vh;
         width: 40vw;
+    }
+
+    .section-info p {
+        font-size: 1.6rem;
     }
 
     .container-cadastros {
@@ -251,14 +352,20 @@ td {
     }
 
     .form input {
+        font-size: 1.4rem;
         width: 80vw;
+    }
+
+    #tabela {
+        width: 80vw;
+    }
+
+    #tabela th, tr, td {
+        font-size: 1.4rem;
     }
 
     #botaoCadastrar {
-        width: 80vw;
-    }
-
-    table {
+        font-size: 1.8rem;
         width: 80vw;
     }
 
@@ -277,4 +384,78 @@ td {
         border-radius: 0.3rem;
         width: 30vw;
     }
+
+    .section-ajuda p {
+        font-size: 1.4rem;
+    }
 }
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.7rem;
+        width: auto;
+    }
+
+    .cabecalho-navegacao-ul li a {
+        font-size: 1.2rem;
+    }
+
+    .titulo-info {
+        font-size: 1.7rem;
+        margin: 1rem 0 5rem 0;
+        text-align: center;
+    }
+
+    .section-info {
+        flex-direction: column;
+        height: 100%;
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .section-info div {
+        width: 100%;
+    }
+
+    .section-info img {
+        border-radius: 0.3rem;
+        height: auto;
+        width: 80vw;
+    }
+
+    .container-cadastros {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .form input {
+        width: 80vw;
+    }
+
+    #botaoCadastrar {
+        width: 80vw;
+    }
+
+    .section-ajuda {
+        flex-direction: column;
+        height: 100%;
+        gap: 2rem;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .section-ajuda div {
+        width: 80vw;
+    }
+
+    .section-ajuda img {
+        border-radius: 0.3rem;
+        width: 80vw;
+    }
+}
+
+*/
