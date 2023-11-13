@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-navegacao">
+            <ul class="cabecalho-navegacao-ul">
+                <li><a onclick="voltar('index')" href="#">Inicio</a></li>
+                <li><a onclick="nav('info')" href="#">O que é EVA? Tô perdido!</a></li>
+                <li><a onclick="nav('ajuda')" href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudoPagina">
+        <div class="container-cadastros">
+            <form class="form">
+                <h2>Cadastro de Robôs</h2>
+                <input type="hidden" id="idEVA">
+                <input type="text" name="nomeUnidadeEVA" id="nomeUnidadeEVA" placeholder="Nome do EVA">
+                <input type="text" name="nomePiloto" id="nomePiloto" placeholder="Piloto Atual">
+                <input type="text" name="emailPiloto" id="emailPiloto" placeholder="E-mail do Piloto no Cadastro NERV">
+                <input type="text" name="dataManutencao" id="dataManutencao" placeholder="Próxima data para manutenção">
+                <input type="text" name="senhaSincronizacaoMental" id="senhaSincronizacaoMental"
+                    placeholder="Parser de Sincronização">
+                <button id="botaoCadastrar" type="submit">Cadastrar</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Identificador EVA</th>
+                        <th>Nome do EVA</th>
+                        <th>Piloto Atual</th>
+                        <th>E-mail do Piloto</th>
+                        <th>Próxima data para manutenção</th>
+                        <th>Parser de Sincronização</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="cadastrosTabela">
+                    <!--
+                    <tr>
+                        <td>Unidade 01</td>
+                        <td>Shinji Ikari</td>
+                        <td>shinji@yahoo.com</td>
+                        <td>01/01/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Unidade 02</td>
+                        <td>Asuka</td>
+                        <td>asuka@yahoo.com</td>
+                        <td>01/01/2022</td>
+                    </tr>
+                    -->
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer class="rodape">
+        <div>
+            <img src="./assets/img/logo-nerv-4.webp" alt="logo-nerv" id="logo-nerv">
+            <span class="rodape-info-gerais">
+                <p>Tokyo-3</p>
+                <p>Telefone: (11) 99999-9999</p>
+                <p>E-mail: nerv@nerv.net</p>
+            </span>
+        </div>
+        <p>Desenvolvido pela LuNeSystems LTDA. Todos os direitos reservados. 2023.</p>
+    </footer>
+    <script src='./assets/js/main.js'></script>
+</body>
+
+</html>
