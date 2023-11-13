@@ -215,6 +215,87 @@ td {
     height: auto;
 }
 
+/* media quey para até 1380px */
+
+@media (max-width: 1380px) {
+    .container-cadastros {
+        flex-direction: column;
+    }
+
+    .form h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .form input {
+        font-size: 1.4rem;
+        width: 80vw;
+    }
+
+    #botaoCadastrar {
+        font-size: 1.8rem;
+        width: 80vw;
+    }
+
+    #conteudoPagina h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #tabela th, td, tr{
+        font-size: 1.4rem;
+    }
+
+    .section-info {
+        border-radius: 0.6rem;
+        height: auto;
+        padding: 1.4rem;
+        width: 78vw;
+    }
+
+    .section-ajuda {
+        border-radius: 0.6rem;
+        height: auto;
+        padding: 1rem;
+        width: 78vw;
+    }
+
+    #tabela {
+        width: 80vw;
+    }
+}
+
+/* media query para até 1024px */
+
+@media (max-width: 1024px) {
+    .container-cadastros {
+        flex-direction: column;
+    }
+
+    #conteudoPagina h1 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .section-info {
+        border-radius: 0.6rem;
+        height: auto;
+        padding: 1.4rem;
+        width: 78vw;
+    }
+
+    .section-ajuda {
+        border-radius: 0.6rem;
+        height: auto;
+        padding: 1rem;
+        width: 78vw;
+    }
+
+    #tabela {
+        width: 80vw;
+    }
+}
+
 /* media query para até 768px */
 
 @media (max-width: 768px) {
