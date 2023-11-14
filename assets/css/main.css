@@ -218,8 +218,14 @@ td {
 /* media quey para até 1380px */
 
 @media (max-width: 1380px) {
+    .cabecalho-navegacao-ul li a {
+        font-size: 2.4rem;
+    }
+
     .container-cadastros {
         flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
     }
 
     .form h2 {
@@ -228,7 +234,7 @@ td {
     }
 
     .form input {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         width: 80vw;
     }
 
@@ -243,21 +249,59 @@ td {
     }
 
     #tabela th, td, tr{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .section-info {
         border-radius: 0.6rem;
+        flex-direction: column;
+        gap: 2rem;
         height: auto;
         padding: 1.4rem;
-        width: 78vw;
+        width: 85vw;
+    }
+
+    .section-info div {
+        width: 60vw;
+    }
+
+    .section-info div h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .section-info p {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-info img {
+        border-radius: 0.3rem;
+        width: 50vw;
     }
 
     .section-ajuda {
         border-radius: 0.6rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
         height: auto;
-        padding: 1rem;
+        padding: 3rem;
         width: 78vw;
+    }
+
+    .section-ajuda div {
+        height: 10vh;
+        width: 60vw;
+    }
+
+    .section-ajuda p {
+        font-size: 1.7rem;
+    }
+
+    .section-ajuda img {
+        border-radius: 0.3rem;
+        width: 50vw;
     }
 
     #tabela {
@@ -267,7 +311,7 @@ td {
 
 /* media query para até 1024px */
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     .container-cadastros {
         flex-direction: column;
     }
@@ -282,6 +326,10 @@ td {
         height: auto;
         padding: 1.4rem;
         width: 78vw;
+    }
+
+    .section-info img {
+        border-radius: 0.3rem;
     }
 
     .section-ajuda {
