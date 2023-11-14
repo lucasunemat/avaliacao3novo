@@ -248,7 +248,9 @@ td {
         text-align: center;
     }
 
-    #tabela th, td, tr{
+    #tabela th,
+    td,
+    tr {
         font-size: 1.5rem;
     }
 
@@ -358,7 +360,7 @@ td {
         width: auto;
     }
 
-    .form h2{
+    .form h2 {
         font-size: 1.7rem;
     }
 
@@ -389,7 +391,7 @@ td {
         width: 80vw;
     }
 
-    .section-info p{
+    .section-info p {
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
@@ -414,7 +416,7 @@ td {
         width: 60vw;
     }
 
-    .section-ajuda p{
+    .section-ajuda p {
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
