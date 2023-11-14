@@ -218,6 +218,11 @@ td {
 /* media quey para até 1380px */
 
 @media (max-width: 1380px) {
+
+    .cabecalho {
+        margin-bottom: 1rem;
+    }
+
     .cabecalho-navegacao-ul li a {
         font-size: 2.4rem;
     }
@@ -248,6 +253,14 @@ td {
         text-align: center;
     }
 
+    #tabela {
+        border: 1px solid #343434;
+        display: block;
+        height: 30rem;
+        overflow-x: scroll;
+        width: 90vw;
+    }
+
     #tabela th,
     td,
     tr {
@@ -257,6 +270,7 @@ td {
     .section-info {
         border-radius: 0.6rem;
         flex-direction: column;
+        margin-bottom: 3rem;
         gap: 2rem;
         height: auto;
         padding: 1.4rem;
@@ -279,7 +293,8 @@ td {
 
     .section-info img {
         border-radius: 0.3rem;
-        width: 50vw;
+        height: auto;
+        width: 40vw;
     }
 
     .section-ajuda {
@@ -314,6 +329,11 @@ td {
 /* media query para até 1024px */
 
 @media (max-width: 1025px) {
+
+    .cabecalho {
+        margin-bottom: 1rem;
+    }
+
     .container-cadastros {
         flex-direction: column;
     }
@@ -326,18 +346,23 @@ td {
     .section-info {
         border-radius: 0.6rem;
         height: auto;
-        padding: 1.4rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
         width: 78vw;
     }
 
     .section-info img {
         border-radius: 0.3rem;
+        height: auto;
+        width: 40vw;
     }
 
     .section-ajuda {
         border-radius: 0.6rem;
+        gap: 7rem;
         height: auto;
-        padding: 1rem;
+        margin-bottom: 2rem;
+        padding: 4rem;
         width: 78vw;
     }
 
@@ -346,9 +371,33 @@ td {
     }
 }
 
+@media (max-width: 940px) {
+
+    .section-info {
+        margin-bottom: 3rem;
+    }
+
+    .section-ajuda {
+        gap: 12rem;
+        padding: 5rem;
+    }
+
+    #tabela {
+        border: 1px solid #343434;
+        display: block;
+        height: 29rem;
+        overflow-x: scroll;
+        width: 90vw;
+    }
+}
+
 /* media query para até 768px */
 
 @media (max-width: 768px) {
+
+    .cabecalho {
+        margin-bottom: 1.5rem;
+    }
 
     .cabecalho-navegacao-ul li a {
         font-size: 1.7rem;
@@ -402,12 +451,11 @@ td {
         width: 45vw;
     }
 
-    /**/
-
     .section-ajuda {
         border-radius: 0.6rem;
         flex-direction: column;
-        height: 70vh;
+        gap: 7rem;
+        height: 60vh;
         padding: 1rem;
         width: 90vw;
     }
@@ -427,4 +475,136 @@ td {
         width: 50vw;
     }
 
+    @media (max-width: 431px) {
+
+        .cabecalho {
+            margin-bottom: 1rem;
+        }
+
+        .cabecalho-navegacao-ul li a {
+            font-size: 1.2rem;
+        }
+
+        .section-info {
+            margin-bottom: 3rem;
+        }
+
+        .section-info img {
+            width: 70vw;
+        }
+
+        .section-ajuda {
+            gap: 10rem;
+        }
+
+        .section-ajuda{
+            padding: 1rem;
+        }
+
+        .section-ajuda img {
+            width: 70vw;
+        }
+
+        #tabela {
+            border: 1px solid #343434;
+            display: block;
+            height: 20rem;
+            overflow-x: scroll;
+            width: 90vw;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .cabecalho {
+            margin-bottom: 1rem;
+        }
+
+        .cabecalho-navegacao-ul li a {
+            font-size: 1.2rem;
+        }
+
+        .section-info {
+            margin-bottom: 3rem;
+        }
+
+        .section-info img {
+            width: 70vw;
+        }
+
+        .section-ajuda {
+            gap: 14rem;
+            height: 90vh;
+            margin-bottom: 3rem;
+        }
+
+        .section-ajuda img {
+            width: 70vw;
+        }
+
+        #tabela {
+            border: 1px solid #343434;
+            display: block;
+            height: 20rem;
+            overflow-x: scroll;
+            width: 90vw;
+        }
+    }
+
+    @media (max-width: 290px) {
+        .cabecalho {
+            margin-bottom: 1rem;
+        }
+
+        .form input {
+            font-size: 0.7rem;
+            width: 90vw;
+        }
+
+        #botaoCadastrar {
+            font-size: 1.2rem;
+            width: 70vw;
+        }
+
+        .cabecalho-navegacao-ul li a {
+            font-size: 1.2rem;
+        }
+
+        .section-info {
+            margin-bottom: 3rem;
+        }
+
+        .section-info p {
+            font-size: 0.8rem;
+        }
+
+        .section-info img {
+            width: 70vw;
+        }
+
+        .section-ajuda {
+            gap: 4rem;
+            height: 60vh;
+            margin-bottom: 3rem;
+        }
+
+        .section-ajuda p {
+            font-size: 0.8rem;
+        }
+
+        .section-ajuda img {
+            width: 70vw;
+        }
+
+        #tabela {
+            border: 1px solid #343434;
+            display: block;
+            height: 15rem;
+            overflow-x: scroll;
+            width: 90vw;
+        }
+
+        #tabela th, tr, td {
+            font-size: 0.8rem;
+        }
+    }
 }
