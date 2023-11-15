@@ -149,6 +149,25 @@ td {
     padding: 0.6rem;
 }
 
+.mdi-pencil {
+    font-size: 1.2rem;
+}
+
+.mdi-delete {
+    font-size: 1.2rem;
+}
+
+.mdi-pencil:hover {
+    cursor: pointer;
+    color: #4B0082;
+}
+
+.mdi-delete:hover {
+    cursor: pointer;
+    color: #4B0082;
+
+}
+
 /* pagina ajuda */
 
 .titulo-ajuda {
@@ -497,7 +516,7 @@ td {
             gap: 10rem;
         }
 
-        .section-ajuda{
+        .section-ajuda {
             padding: 1rem;
         }
 
@@ -603,7 +622,9 @@ td {
             width: 90vw;
         }
 
-        #tabela th, tr, td {
+        #tabela th,
+        tr,
+        td {
             font-size: 0.8rem;
         }
     }
